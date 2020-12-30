@@ -124,6 +124,7 @@ extension HomeController: HomeMenuDelegate {
     }
     
     func newsMenuDidTapped(homeMenu: HomeMenu) {
+        navigationController?.pushViewController(NewsController(), animated: true)
     }
     
     func galleryMenuDidTapped(homeMenu: HomeMenu) {

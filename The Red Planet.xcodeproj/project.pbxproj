@@ -17,6 +17,9 @@
 		FDA2B12525931863005FD040 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2B12425931863005FD040 /* ContentView.swift */; };
 		FDA2B12A2594A298005FD040 /* HomeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2B1292594A298005FD040 /* HomeMenu.swift */; };
 		FDA2B12C2595DB8D005FD040 /* WeatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA2B12B2595DB8D005FD040 /* WeatherController.swift */; };
+		FDEB5700259CEF6A00269DD9 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEB56FF259CEF6A00269DD9 /* NewsController.swift */; };
+		FDEB5703259CF05500269DD9 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEB5702259CF05500269DD9 /* BackButton.swift */; };
+		FDEB5707259CF57800269DD9 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEB5706259CF57800269DD9 /* NewsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FDA2B12425931863005FD040 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDA2B1292594A298005FD040 /* HomeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu.swift; sourceTree = "<group>"; };
 		FDA2B12B2595DB8D005FD040 /* WeatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherController.swift; sourceTree = "<group>"; };
+		FDEB56FF259CEF6A00269DD9 /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		FDEB5702259CF05500269DD9 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		FDEB5706259CF57800269DD9 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +98,10 @@
 		FDA2B11A2593112B005FD040 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FDEB5701259CF02400269DD9 /* Reusable View */,
 				FDA2B1282594A28F005FD040 /* Home */,
 				FD74ED1C25971C05005EB5C5 /* Weather */,
+				FDEB5704259CF54B00269DD9 /* News */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 			children = (
 				FDA2B11F25931190005FD040 /* HomeController.swift */,
 				FDA2B12B2595DB8D005FD040 /* WeatherController.swift */,
+				FDEB56FF259CEF6A00269DD9 /* NewsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -149,6 +158,22 @@
 				FDA2B1292594A298005FD040 /* HomeMenu.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		FDEB5701259CF02400269DD9 /* Reusable View */ = {
+			isa = PBXGroup;
+			children = (
+				FDEB5702259CF05500269DD9 /* BackButton.swift */,
+			);
+			path = "Reusable View";
+			sourceTree = "<group>";
+		};
+		FDEB5704259CF54B00269DD9 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				FDEB5706259CF57800269DD9 /* NewsCell.swift */,
+			);
+			path = News;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +247,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEB5700259CEF6A00269DD9 /* NewsController.swift in Sources */,
 				FDA2B123259314EA005FD040 /* UIView.swift in Sources */,
 				FDA2B12525931863005FD040 /* ContentView.swift in Sources */,
 				FDA2B12A2594A298005FD040 /* HomeMenu.swift in Sources */,
+				FDEB5707259CF57800269DD9 /* NewsCell.swift in Sources */,
 				FDA2B10625930C3B005FD040 /* AppDelegate.swift in Sources */,
+				FDEB5703259CF05500269DD9 /* BackButton.swift in Sources */,
 				FDA2B10825930C3B005FD040 /* SceneDelegate.swift in Sources */,
 				FDA2B12C2595DB8D005FD040 /* WeatherController.swift in Sources */,
 				FDA2B12025931190005FD040 /* HomeController.swift in Sources */,

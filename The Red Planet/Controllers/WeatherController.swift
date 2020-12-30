@@ -20,16 +20,8 @@ class WeatherController: UIViewController {
     }()
     
     private lazy var backButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setImage(UIImage(systemName: "chevron.left"), for: .normal)
-        let symbolConfig = UIImage.SymbolConfiguration(pointSize: 15, weight: .bold)
-        button.setPreferredSymbolConfiguration(symbolConfig, forImageIn: .normal)
-        button.tintColor = .white
+        let button = BackButton()
         button.addTarget(self, action: #selector(backButtonDidTapped), for: .touchUpInside)
-        button.setDimensions(height: 40, width: 40)
-        button.layer.borderWidth = 1
-        button.layer.cornerRadius = 40 / 2
-        button.layer.borderColor = UIColor.lightGray.cgColor
         return button
     }()
     
@@ -264,24 +256,4 @@ class WeatherController: UIViewController {
     //MARK: - API
     
     
-}
-
-//MARK: - PreviewProvider
-
-import SwiftUI
-
-struct MainPreview: PreviewProvider {
-    static var previews: some View {
-        ContainerView().edgesIgnoringSafeArea(.all)
-    }
-    
-    struct ContainerView: UIViewControllerRepresentable {
-        func makeUIViewController(context: UIViewControllerRepresentableContext<MainPreview.ContainerView>) -> UIViewController {
-            
-            return WeatherController()
-        }
-        
-        func updateUIViewController(_ uiViewController: MainPreview.ContainerView.UIViewControllerType, context: UIViewControllerRepresentableContext<MainPreview.ContainerView>) {
-        }
-    }
 }
